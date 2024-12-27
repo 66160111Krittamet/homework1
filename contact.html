@@ -49,5 +49,15 @@
  <footer>
  <p>&copy; 2024 My Website</p>
  </footer>
+ <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const form = event.target;
+      const statusMessage = document.getElementById('statusMessage');
+      statusMessage.textContent = 'ส่งข้อความเรียบร้อย';
+      statusMessage.style.color = 'green'; 
+      form.reset();
+    });
+  </script>
 </body>
 </html>
